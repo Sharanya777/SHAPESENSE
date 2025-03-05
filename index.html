@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShapeSense - Body Type Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>BODY TYPE DETECTION</h1>
+      <p>Discover and embrace your unique body type.</p>
+    </header>
+
+    <section class="intro">
+      <div class="image-placeholder">
+        <img src="https://i.pinimg.com/736x/90/7a/5e/907a5e7f1c073eb382f2455309f70318.jpg" alt="Bodytype Illustration">
+      </div>
+      <p>Body type detection helps you understand your unique shape by analyzing a photo. Upload an image to get started.</p>
+    </section>
+
+    <section class="upload-section">
+      <label for="imageInput" class="upload-btn">UPLOAD IMAGE</label>
+      <input type="file" id="imageInput" accept="image/*" hidden>
+    </section>
+
+    <section class="output-section">
+      <div class="canvas-container">
+        <canvas id="canvas"></canvas>
+      </div>
+      <p class="bodytype-text">YOUR BODY TYPE IS:</p>
+      <div id="output">Please upload an image to detect your body type.</div>
+    </section>
+
+    <section class="footer">
+      <p>At <strong>ShapeSense</strong>, we believe that every body is beautiful. Our goal is to empower you to understand and embrace your unique shape.</p>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
