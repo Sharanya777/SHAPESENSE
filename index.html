@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShapeSense - Body Type Detection</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">SHAPESENSE</div>
+
+    <!-- Main Section -->
+    <div class="main">
+      <div class="content">
+        <h1>BODYTYPE <br> DETECTION</h1>
+        <p>Body type detection helps you understand your unique shape by analyzing a photo. Just upload a picture, and we’ll figure out your body type.</p>
+        <label for="imageInput" class="upload-btn">UPLOAD</label>
+        <input type="file" id="imageInput" accept="image/*" hidden>
+      </div>
+      <div class="illustration">
+        <img src="DAZ_Studio.png" alt="Body Type Illustration">
+      </div>
+    </div>
+
+
+    <section class="output-section">
+      <div class="canvas-container">
+        <canvas id="canvas"></canvas>
+      </div>
+      <p class="bodytype-text">YOUR BODY TYPE IS:</p>
+      <div id="output">Please upload an image to detect your body type.</div>
+    </section>
+
+    <section class="footer">
+      <p>At <strong>ShapeSense</strong>, we believe that every body is beautiful. Our goal is to empower you to understand and embrace your unique shape.</p>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

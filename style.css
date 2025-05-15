@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+  margin: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Rubik", serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #050574, #707074);
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin: auto;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #d4cece;
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+/* Main Section */
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.content {
+  text-align: left;
+  max-width: 50%;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #e5dddd;
+}
+
+/* Upload Button */
+.upload-btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: rgb(1, 1, 1);
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #9d9b9b;
+}
+
+/* Illustration */
+.illustration img {
+  width: 500px;
+  height: 600px;
+}
+
+.output {
+  text-size-adjust: 20px ;
+}
